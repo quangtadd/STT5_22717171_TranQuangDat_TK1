@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p>Nhap nam can kiem tra: 
+    <input type="text" name="txtName" id="txtName">
+    <input type="button" value="Kiem tra" onclick="KiemTraNamNhuan()" />
+    </p>
+    <script languege="javascript">
+        function KiemTraNamNhuan(){
+            var nam = document.getElementById("txtName").value;
+
+            if (nam % 100 == 0){
+                if(nam % 400 == 0) {
+                    alert("nam" + nam + "la nam nhuan")
+                }else{
+                    alert("nam" + nam + "khong la nam nhuan")
+                }
+            }else if (nam % 4 == 0){
+                alert("nam" + nam + "la nam nhuan")
+            } else {
+                alert("nam" + nam + "khong la nam nhuan")
+            }
+        }
+    </script>
+</body>
+
+</html>
